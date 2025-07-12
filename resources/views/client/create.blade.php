@@ -8,17 +8,18 @@
             </div>
             <div class="col-md-10">
                 <form action="{{ route('store-clients') }}" method="post">
+                    @csrf
                     <div class="form-group">
                         <label for="client-name">Név</label>
-                        <input type="text" autocomplete="off" class="form-control" id="client-name" placeholder="Add meg a teljes nevet">
+                        <input type="text" autocomplete="off" class="form-control" id="client-name" placeholder="Add meg a teljes nevet" name="name">
                     </div>
                     <div class="form-group">
                         <label for="client-name">Email</label>
-                        <input type="email" autocomplete="off" class="form-control" id="client-name" placeholder="Add meg az email címet">
+                        <input type="email" autocomplete="off" class="form-control" id="client-name" placeholder="Add meg az email címet" name="email">
                     </div>
                     <div class="form-group">
                         <label for="client-name">Telefonszám</label>
-                        <input type="text" autocomplete="off" class="form-control" id="client-name" placeholder="Add meg a telefonszámot">
+                        <input type="text" autocomplete="off" class="form-control" id="client-name" placeholder="Add meg a telefonszámot" name="phone">
                     </div>
                     <div class="form-group">
 

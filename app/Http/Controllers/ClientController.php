@@ -20,7 +20,15 @@ class ClientController extends Controller
         $imgs = [$dir . 'c1.png', $dir . 'c2.png', $dir . "c3.png"];
         return view('client.create', compact('imgs'));
     }
-    public function store() {}
+    public function store(Request $request)
+    {
+        try {
+            Client::create($request->all());
+            return redirect()->route('list-clients');
+        } catch (\Throwable $th) {
+            dd($th);
+        }
+    }
 
     public function remove(Request $request)
     {
