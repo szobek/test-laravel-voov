@@ -30,15 +30,18 @@ class DatabaseSeeder extends Seeder
         Client::create([
             'name'=>'John Doe',
             'email'=>'john.doe@pelda.hu',
+            'phone'=>'123-456-7890',
             'avatar'=>'c1.png'
         ]);
         Client::create([
             'name'=>'Jane Smith',
+            'phone'=>'555-123-4567',
             'email'=>'jane.smith@pelda.hu',
             'avatar'=>'c2.png'
         ]);
         Client::create([
             'name'=>'Bob Johnson',
+            'phone'=>'987-654-3210',
             'email'=>'bob.johnson@pelda.hu',
             'avatar'=>'c3.png'
         ]);
