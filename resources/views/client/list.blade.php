@@ -29,7 +29,7 @@
                             </td>
                         </tr>
                         @empty
-                            <td colspan="4">No users found.</td>
+                            <td colspan="4">Nincs kliens.</td>
                         @endforelse
                     </tbody>
                 </table>

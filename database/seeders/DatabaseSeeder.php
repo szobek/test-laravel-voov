@@ -16,12 +16,29 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(10)->create();
 
-        \App\Models\User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-            'password' =>  bcrypt('password')
-        ]);
+        // teszteléshez
 
-        \App\Models\Client::factory(3)->create();
+        // \App\Models\User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        //     'password' =>  bcrypt('password')
+        // ]);
+
+        // \App\Models\Client::factory(3)->create(); // ezt kell futtani, ha seedelni akarunk többféle klienst
+        \App\Models\Client::create([
+            'name'=>'John Doe',
+            'email'=>'john.doe@pelda.hu',
+            'avatar'=>'c1.png'
+        ]);
+        \App\Models\Client::create([
+            'name'=>'Jane Smith',
+            'email'=>'jane.smith@pelda.hu',
+            'avatar'=>'c2.png'
+        ]);
+        \App\Models\Client::create([
+            'name'=>'Bob Johnson',
+            'email'=>'bob.johnson@pelda.hu',
+            'avatar'=>'c3.png'
+        ]);
     }
 }
