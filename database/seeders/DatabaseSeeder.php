@@ -20,11 +20,11 @@ class DatabaseSeeder extends Seeder
 
         // teszteléshez
 
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        //     'password' =>  bcrypt('password')
-        // ]);
+        User::factory()->create([
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+            'password' =>  bcrypt('password')
+        ]);
 
         // \App\Models\Client::factory(3)->create(); // ezt kell futtani, ha seedelni akarunk többféle klienst
         Client::create([

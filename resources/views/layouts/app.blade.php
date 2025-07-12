@@ -35,7 +35,11 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li>
-                            <a href="/list" class="nav-link">Kliensek</a>
+                            <a href="{{route('list-clients')}}" class="nav-link">Kliensek</a>
+                        </li>
+                    <ul class="navbar-nav me-auto">
+                        <li>
+                            <a href="{{route('create-clients-view')}}" class="nav-link">Új kliens</a>
                         </li>
                     </ul>
 
