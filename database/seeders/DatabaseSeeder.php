@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use \App\Models\Client;
+use \App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,28 +16,28 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\User::factory(10)->create();
+        User::factory(10)->create();
 
         // teszteléshez
 
-        // \App\Models\User::factory()->create([
+        // User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         //     'password' =>  bcrypt('password')
         // ]);
 
         // \App\Models\Client::factory(3)->create(); // ezt kell futtani, ha seedelni akarunk többféle klienst
-        \App\Models\Client::create([
+        Client::create([
             'name'=>'John Doe',
             'email'=>'john.doe@pelda.hu',
             'avatar'=>'c1.png'
         ]);
-        \App\Models\Client::create([
+        Client::create([
             'name'=>'Jane Smith',
             'email'=>'jane.smith@pelda.hu',
             'avatar'=>'c2.png'
         ]);
-        \App\Models\Client::create([
+        Client::create([
             'name'=>'Bob Johnson',
             'email'=>'bob.johnson@pelda.hu',
             'avatar'=>'c3.png'
