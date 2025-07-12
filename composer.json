@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "voov test work",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Client manager",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
