@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Client;
+use App\Models\Customer;
 use Illuminate\Http\Request;
 
-class ClientController extends Controller
+class CustomerController extends Controller
 {
     public function list()
     {
-        $clients = Client::all();
+        $clients = Customer::all();
 
         return view('client.list', compact('clients'));
     }
@@ -23,7 +23,7 @@ class ClientController extends Controller
     public function store(Request $request)
     {
         try {
-            Client::create($request->all());
+            Customer::create($request->all());
             return redirect()->route('list-clients');
         } catch (\Throwable $th) {
             dd($th);
@@ -33,7 +33,7 @@ class ClientController extends Controller
     public function remove(Request $request)
     {
         try {
-            Client::findOrFail($request->input('id'))->delete();
+            Customer::findOrFail($request->input('id'))->delete();
         } catch (\Throwable $th) {
             dd($th);
         }

@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\ClientController;
+use App\Http\Controllers\CustomerController;
 
 
 Route::get('/', function () {
@@ -11,5 +11,5 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/list', [ClientController::class, 'list'])->name('list-clients');
+Route::get('/list', [CustomerController::class, 'list'])->name('list-clients');
 
