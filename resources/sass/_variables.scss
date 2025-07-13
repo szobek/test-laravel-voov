@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
+
 // Body
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 $body-bg:#F3F2E5;
+
+$font-primary:"Instrument Serif", serif;
+$font-secondary:"Instrument Sans", sans-serif;
+$btn-create-bg:#1453E2;
+$btn-create-text:#fff;
+
+$client-list-text:#2F2D2A;
+$client-table-border-color: #9F9C95

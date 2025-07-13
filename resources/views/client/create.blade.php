@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <h1>Új ügyfél hozzáadása</h1>
+                <h1 class="title">Új ügyfél hozzáadása</h1>
             </div>
             <div class="col-md-10">
                 <form action="{{ route('store-clients') }}" method="post">
