@@ -7,9 +7,9 @@
     .create-customer-div-outer {
         border: 1px solid #9F9C95;
         padding: 10px;
+        border-radius: 16px;
 
         .create-customer-div {
-            border: 1px solid #9F9C95;
             margin: 0 auto;
 
             label,
@@ -44,4 +44,8 @@
             }
         }
     }
+}
+
+#create-customer-btn{
+    margin-top: 20px;
 }
