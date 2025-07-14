@@ -16,8 +16,8 @@ class CustomerController extends Controller
 
     public function create()
     {
-        $dir = "assets/img/";
-        $imgs = [$dir . 'c1.png', $dir . 'c2.png', $dir . "c3.png"];
+        
+        $imgs = ['c1.png','c2.png',"c3.png"];
         return view('client.create', compact('imgs'));
     }
     public function store(Request $request)
